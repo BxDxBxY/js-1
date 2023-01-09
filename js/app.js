@@ -251,3 +251,28 @@ function comparison (age) {
     return result ;
 }
 console.log(comparison (500) );
+ 
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
+const body = document.querySelector ("body");
+const div = document.querySelector ("div");
+const btn1 = document.querySelector ("#myBtn");
+const selectBtn = document.getElementById ("myBtn");
+const color = document.getElementById ("myColor");
+
+selectBtn.addEventListener ("click", function () {
+    let hexTag = '#'
+    for(let i = 0; i<6; i++) {
+        hexTag += hex[randomNumber()]
+    }
+    color.textContent = hexTag
+    color.style.color = hexTag
+    document.body.style.backgroundColor = hexTag
+})
+selectBtn.classList.toggle ("move")
+ function  randomNumber (){
+    return Math.floor(Math.random() * hex.length) ;
+ }
+console.log (randomNumber())
+
+ // ternar usuli
