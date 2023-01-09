@@ -1,10 +1,11 @@
 // let a = 5
 // let b = 3
 // let c = 15
-
+const styles = 'display: flex; margin: 10px; color: lightgreen; background-color: ; font-weight: bold; font-size: 20px; flex-direction: column; ';
+const text = "Pasidigi qoshimcha uy ishi 'task-2'";
 // let count = Math.pow( a, b) 
-// let random = Math.random() * 50  // random number generator for each iteration of the loop
-// random = parseInt(random) // convert to number of butun son
+let random = Math.random() * 6  // random number generator for each iteration of the loop
+random = parseInt(random) // convert to number of butun son
 
 // let n = 4
 // let sum = n - c
@@ -58,30 +59,49 @@
 // console.log(speed(98)) 
 
 
+const text2 = "HomeWork 2 " + "Task 1";
+const styles2 = 'color: slategray; background-color: black; font-weight: bold; font-size: 20px; padding: 10px; ';
 
-console.log("HomeWork 2")
+window.console.log('%c%s', styles2, text2);
+
 
 const a = Math.floor(Math.random() * 100)
 const b = Math.floor(Math.random() * 100)
+const aa = Math.random() * 100
+const bb = Math.random() * 100
+const cc = Math.random() * 100
+const dd = Math.random() * 100
+const ee = Math.random() * 100
+const ff = Math.random() * 100
 
-console.log(a, b)
+console.log('%c%s', styles, [a, b])
 
 function task2() {
     if (a == b || a == -b || b == -a){
-        console.log( a + " va " + b + " sonlar 5 ga birhil yaqinlikda") 
+        console.log('%c%s', styles, a + " va " + b + " sonlar 5 ga birhil yaqinlikda") 
     } else if ( Math.abs(a) < Math.abs(b) ) {
-        console.log(a + " bu son 5 ga " + b + " dan yaqin" )
+        console.log('%c%s', styles, a + " bu son 5 ga " + b + " dan yaqin" )
     } else if ( Math.abs(a) > Math.abs(b)) {
-        console.log(b + " bu son 5 ga " + a + " dan yaqin")
+        console.log('%c%s', styles, b + " bu son 5 ga " + a + " dan yaqin")
     } else {
-        console.log(a,b + " - WDYM MAN? It's not a number!")
+        console.log('%c%s', styles, a,b + " - WDYM MAN? It's not a number!")
     }
 }
-console.log(task2())
+console.log('%c%s', styles, task2())
 
+// console.log("Pasidigi qoshimcha uy ishi 'task-2'" ,  "color: yellow; background-color: blue;")
 
-const numbers = [-1.5421, 2.1344, -0.355, [4.1324], [6.700]]
+console.log('%c%s', styles2, text);
+
+const numbers = [aa, bb, cc, [dd], [ee], ff]
+console.log('%c%s', styles, numbers)
+
 function task2_2  (chose) { // chose from 0 to 4
     return result = Math.abs(Math.round(numbers[chose])) 
 }
-console.log(task2_2(4))    
+console.log('%c%s', styles, "array raqami " + random)
+
+console.log('%c%s', styles, task2_2(random) + " bu javobi" )
+
+
+
